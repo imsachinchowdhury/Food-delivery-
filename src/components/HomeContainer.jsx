@@ -5,7 +5,7 @@ import { heroData } from "../utils/data";
 
 const HomeContainer = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full" id="home">
+    <section className=" grid grid-cols-1 md:grid-cols-2 gap-2 w-full" id="home">
       <div className="py-2 flex-1 flex-col items-start  justify-center gap-6">
         <div className="w-40 md:w-full flex items-center gap-2 justify-center bg-orange-100 px-2 py-1 rounded-full">
           <p className="text-base text-orange-500 font-semibold">
@@ -19,7 +19,7 @@ const HomeContainer = () => {
             />
           </div>
         </div>
-        <p className="text-[2.5rem] lg:text-[4.5rem] md:text-[4.5rem]  font-bold tracking-wide text-headingColor">
+        <p className="text-[2.5rem] lg:text-[4rem] md:text-[4.5rem]  font-bold tracking-wide text-headingColor">
           The Fastest Delivery in{" "}
           <span className="text-orange-600 text-[3rem] md:text-[5rem]">
             Your City
@@ -37,18 +37,18 @@ const HomeContainer = () => {
           Order Now
         </button>
       </div>
-      <div className="py-2 flex-1 items-center relative ">
+      <div className=" py-2 flex-1 items-center relative ">
         <img
           src={HeroBg}
           alt="herobg"
-          className="ml-auto h-420 w-full lg:w-auto lg:h-650 rounded-lg"
+          className="ml-auto h-320 w-full lg:w-auto lg:h-650 rounded-lg"
         />
         <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32 py-4 gap-5 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div
                 key={n.id}
-                className="lg:w-150 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center"
+                className="lg:w-[45%] p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center"
               >
                 <img
                   src={n.imageSrc}
